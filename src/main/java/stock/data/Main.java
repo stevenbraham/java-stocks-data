@@ -14,5 +14,7 @@ public class Main {
         Company company = stocksApi.lookup("AAPL");
         //print results
         System.out.println(company.name);
+        System.out.println(company.exchange);
+        System.out.println(company.stockPrice);
     }
 }
