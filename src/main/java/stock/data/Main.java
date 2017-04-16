@@ -8,10 +8,14 @@ import stock.data.models.Company;
  */
 public class Main {
     public static void main(String[] args) {
+        //check args
+        if (args.length != 1) {
+            throw new IllegalArgumentException("Please provide a stock symbol");
+        }
         //initialize api
         Stocks stocksApi = new Stocks();
         //do lookup
-        Company company = stocksApi.lookup("AAPL");
+        Company company = stocksApi.lookup(args[0]);
         //print results
         System.out.println(company.name);
         System.out.println(company.exchange);
