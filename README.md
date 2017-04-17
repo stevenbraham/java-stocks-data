@@ -3,6 +3,8 @@ A small project to brush off my Java skills. This program allow you to input a s
 
 This project follows the [Maven project guidelines](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html).
 
+You can build a jar with: `mvn clean compile assembly:single`
+
 After building the jar, you can run the program like this: `java -jar java-stock-data.jar AAPL`.
 
 This will output something similair to:
